@@ -1,0 +1,5 @@
+print("salut".upper())
+print("SALUT".lower())
+print("salut".capitalize())
+print("salut à tous".title())
+print("salut".replace("salut","Au revoir"))

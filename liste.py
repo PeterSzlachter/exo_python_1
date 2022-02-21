@@ -48,3 +48,4 @@ print("code" in phrase)
 
 liste_2 = ["Python", ["Java", "C++",["C"]], ["Ruby"]]
 print(liste_2[1][2][0])
+print(liste_2[0][1:3])
