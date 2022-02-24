@@ -49,3 +49,6 @@ print("code" in phrase)
 liste_2 = ["Python", ["Java", "C++",["C"]], ["Ruby"]]
 print(liste_2[1][2][0])
 print(liste_2[0][1:3])
+
+notes = [12,14,20,10,8]
+print(any([x > 18 for x in notes]))

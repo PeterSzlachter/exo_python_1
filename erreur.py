@@ -4,11 +4,37 @@ print(NameError)
 print(TypeError)
 
 print("""Mots réservés :
-continue
-pass
-break
+False
+None
+True
 and
+as
+assert
+break
+class
+continue
+def
+del
+elif
+else
+except
+finally
+for
+from
+global
+if
+import
+in
 is
+lambda
+non local
 not
-list
+or
+pass
+raise
+return
+try
+while
+with
+yield
 """)

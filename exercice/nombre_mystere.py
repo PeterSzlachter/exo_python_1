@@ -10,7 +10,7 @@ def findNumber(k):
             choice = int(input("Trouver le nombre mystère : "))
             if k > choice :
                 print("C'est plus !")
-            elif k< choice:
+            elif k < choice:
                 print("C'est moins !")
             count += 1
         except ValueError as e:
