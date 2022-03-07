@@ -1,4 +1,4 @@
-import sys
+import sys, os, json
 
 LISTE = []
 
@@ -12,6 +12,12 @@ MENU = """Choisissez parmi les 5 options suivantes :
 
 MENU_CHOICES = ["1", "2", "3", "4", "5"]
 
+CUR_DIR = os.path.dirname(__file__)
+
+if not os.path.exists(CUR_DIR+"/liste.json"):
+    with open("liste.json", "x") as f :
+        pass
+    
 while True:
     user_choice = input(MENU)
     if user_choice not in MENU_CHOICES:
@@ -40,6 +46,8 @@ while True:
         LISTE.clear()
         print("La liste a été vidée de son contenu.")
     elif user_choice == "5":  # Quitter
+        with open(CUR_DIR+"/liste.json","w") as f:
+            json.dump(LISTE, f, indent=4)
         print("À bientôt !")
         sys.exit()
 

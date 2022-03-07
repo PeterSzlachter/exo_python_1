@@ -145,6 +145,6 @@
 
 # print("Fin du jeu.")
 
-a, b = 5, 10
+# a, b = 5, 10
 
-print(f"{b}")
+# print(f"{b}")

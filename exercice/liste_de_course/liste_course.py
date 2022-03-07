@@ -1,5 +1,5 @@
-import sys
-LISTE = ["Pomme", "Radis"]
+import sys,os,json
+
 MENU = """Choisissez parmi les 5 options suivantes :
 1: Ajouter un élément à la liste
 2: Retirer un élément de la liste
@@ -9,6 +9,16 @@ MENU = """Choisissez parmi les 5 options suivantes :
 👉 Votre Choix : """
 
 MENU_CHOICES = ["1","2","3","4","5"]
+
+CUR_DIR = os.path.dirname(__file__)
+LISTE_PATH  = os.path.join(CUR_DIR,"liste.json")
+print(LISTE_PATH)
+
+if os.path.exists(LISTE_PATH):
+    with open(LISTE_PATH, "r") as f :
+        LISTE = json.load(f)
+else:
+    LISTE = []
 
 def affichage_liste(liste):
     if liste:
@@ -35,7 +45,7 @@ while True :
         element = input("Quel élément retirer de la liste ? ").capitalize()
         if element in LISTE :
             LISTE.remove(element.capitalize())
-            print(f"L'élément {element} n'est pas la liste.")
+            print(f"L'élément {element} a été supprimé.")
         else :
             print(f"{element} n'est pas dans la liste")
                 
@@ -48,5 +58,7 @@ while True :
             print("La liste a été vidée de son contenu")
                 
     elif user_choice == "5" :
-        print("Fin du programme : ")
+        with open(LISTE_PATH,"w") as f:
+            json.dump(LISTE, f, indent=4)
+        print("Fin du programme : Votre liste a été sauvegardé 📜")
         sys.exit()
