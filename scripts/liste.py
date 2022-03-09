@@ -52,3 +52,13 @@ print(liste_2[0][1:3])
 
 notes = [12,14,20,10,8]
 print(any([x > 18 for x in notes]))
+
+mytuple=("orange", "peche", "mangue", "banane")
+# Affiche le deuxieme et troisieme (le "1" n est pas inclus)
+print(mytuple[1:3])
+# Affiche du 3e au dernier
+print(mytuple[2:])
+# Affiche du debut au troisieme
+print(mytuple[:3])
+# Affiche du deuxieme a l'avant dernier
+print(mytuple[1:-1])

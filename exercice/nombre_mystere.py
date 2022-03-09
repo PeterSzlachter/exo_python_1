@@ -5,7 +5,7 @@ def findNumber(k):
     choice = 0
     print(k)
 
-    while ( k is not choice):
+    while ( k != choice):
         try:
             choice = int(input("Trouver le nombre mystère : "))
             if k > choice :
@@ -21,3 +21,4 @@ def findNumber(k):
 
 
 findNumber(random.randint(1,100))
+

@@ -148,3 +148,10 @@
 # a, b = 5, 10
 
 # print(f"{b}")
+
+# mot = f"    bonjour   "
+# mot = mot.rstrip("b")
+# print(mot)
+
+for c in solution :
+    pass
