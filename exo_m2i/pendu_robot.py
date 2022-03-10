@@ -14,13 +14,30 @@ def check_error(user_choice):
         print("N'essaye pas de hacker le game, rentre une seule lettre, merci")
         user_choice = input("Tapez une lettre : ")
 
+def robot_check_len(dico, solution):
+    dico_robot = []
+    for word in dico:
+        if len(word) == len(solution):
+            dico_robot.append(word)
+    return dico_robot
+
+def robot_check_lettre(dico_robot, tab):
+    index = 0
+    for word in dico_robot:
+        for lettre in word:
+            if lettre == tab[index]:
+                
+            index += 1
+
 # début du programme :
 
 dico = ["oignon","poney","cacatohes","banane","pantoufle","cacochyme","xylophone","cucurbitace","phagocyte","grillage","ultracrepidarianisme"
         ,"formateur","detrusor","souris","balai","lapsus","potiron"]
 solution = random.choice(dico)
+dico_robot = robot_check_len(dico, solution) # on récupère les mots de même taille que la solution dans le dictionnaire
 tab = []
 erreur = 0
+alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
 for l in range(len(solution)): # on rempli tab de "_" a la bonne taille
     tab.append("_")
@@ -30,6 +47,7 @@ while erreur < 8:
 
     index = 0
     user_choice = input("Tapez une lettre : ").lower() # en lower pour éviter les conflits avec la casse
+    robot_choice = dico_robot[0]
 
     check_error(user_choice)
 
@@ -59,4 +77,4 @@ else:
     ||       / \ 
     ||           
     ==============\n{bcolors.RESET}
-    Le mot était : {bcolors.OK}{solution}{bcolors.RESET}""") 
+    Le mot était : {bcolors.OK}{solution}{bcolors.RESET}""")
