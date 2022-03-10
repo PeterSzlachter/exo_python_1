@@ -23,7 +23,7 @@ solution = "petitcul"
 tab = []
 erreur = 0
 
-for l in range(len(solution)): # on rempli tab de "_" a la bonne taille
+for l in range(len(solution)): # on rempli tab de "_" a la bonne taille "-" si c'est un mot composé
     if solution[l] == "-":
         tab.append("-")
     else:
