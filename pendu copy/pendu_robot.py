@@ -1,11 +1,5 @@
 import random
 
-class bcolors:
-    OK = '\033[92m' #GREEN
-    WARNING = '\033[93m' #YELLOW
-    FAIL = '\033[91m' #RED
-    RESET = '\033[0m' #RESET COLOR
-
 def show(tab):
     print(" ".join(tab))
 
@@ -26,13 +20,12 @@ def robot_check_lettre(dico_robot, tab):
     for word in dico_robot:
         for lettre in word:
             if lettre == tab[index]:
-                
+                pass
             index += 1
 
 # début du programme :
 
-dico = ["oignon","poney","cacatohes","banane","pantoufle","cacochyme","xylophone","cucurbitace","phagocyte","grillage","ultracrepidarianisme"
-        ,"formateur","detrusor","souris","balai","lapsus","potiron"]
+dico = ["oignon","poney","cacatohes","banane","pantoufle","cacochyme","xylophone","cucurbitace","phagocyte","grillage","ultracrepidarianisme","formateur","detrusor","souris","balai","lapsus","potiron"]
 solution = random.choice(dico)
 dico_robot = robot_check_len(dico, solution) # on récupère les mots de même taille que la solution dans le dictionnaire
 tab = []
@@ -66,15 +59,15 @@ while erreur < 8:
 
 
 if erreur < 8:
-    print(f"{bcolors.OK}Bravo c'est une victoire amplement méritée{bcolors.RESET}") 
+    print(f"Bravo c'est une victoire amplement méritée") 
 else:
     print(f"""
-      {bcolors.FAIL}YOU DIED
+      YOU DIED
     ==========Y= 
     ||/       |  
     ||        0  
     ||       /|\ 
     ||       / \ 
     ||           
-    ==============\n{bcolors.RESET}
-    Le mot était : {bcolors.OK}{solution}{bcolors.RESET}""")
+    ==============\n
+    Le mot était : {solution}""")

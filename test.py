@@ -153,5 +153,11 @@
 # mot = mot.rstrip("b")
 # print(mot)
 
-for c in solution :
-    pass
+# for c in solution :
+#     pass
+
+table = [1,2,3,4,5,6]
+caca = 3
+
+for i in table and caca > 2:
+    print(i)
