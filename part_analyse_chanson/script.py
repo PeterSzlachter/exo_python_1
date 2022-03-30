@@ -7,8 +7,8 @@ from pathlib import Path
 
 CURRENT_FILE = Path(__file__).parent
 artists = {"PNL" : 335710, "JUL" : 74283, "DAMSO": 45855, "NEKFEU" : 13063, "Johnny Hallyday" : 96830, "Patrick Bruel" : 29743}
-
-def extract_lyrics(url,word_length = 3):
+    
+def extract_lyrics(url,word_length = 2):
     
     print(f"Fetching lyrics ... {url}")
     r = requests.get(url)
@@ -16,7 +16,8 @@ def extract_lyrics(url,word_length = 3):
     text = soup.find_all("div", attrs={"data-lyrics-container":"true"})
     
     all_words = []
-    not_wanted_char = ["[","]","(",")"]
+    not_wanted_char = ["[","]","(",")","\\","/"]
+    
     for line in text:
         for line_clean in line.stripped_strings:
             sentence_words = [word.strip(",").strip(".").strip("(").strip(")").lower() for word in line_clean.split() if len(word) > word_length and "[" not in word and "]" not in word and "(" not in word and ")" not in word]
@@ -45,9 +46,11 @@ def get_all_urls(number_artist):
         return links
     else:
         print("Problème d'URL")
-
-def get_all_words():
-    urls = get_all_urls(artists["Patrick Bruel"])
+        
+def get_all_words(artist:str):
+    if artist not in artists:
+        return print("artist not found")
+    urls = get_all_urls(artists[artist])
     words = []
     for url in urls:
         lyrics = extract_lyrics(url)
@@ -56,10 +59,10 @@ def get_all_words():
     count_words = counter.most_common()
     # print(counter.most_common(15))
     dict_words = {}
-    with open(CURRENT_FILE / f"data_json_{artists['NEKFEU']}" ,"w",encoding="utf-8") as f :
+    with open(CURRENT_FILE / f"data_json_{artists[artist]}" ,"w",encoding="utf-8") as f :
         for word in count_words:
             dict_words[word[0]] = word[1]
         json.dump(dict_words,f, indent=4,ensure_ascii=False)
         
 
-get_all_words()
+get_all_words("test")
