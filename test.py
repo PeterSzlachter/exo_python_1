@@ -159,5 +159,5 @@
 table = [1,2,3,4,5,6]
 caca = 3
 
-for i in table and caca > 2:
-    print(i)
+def truc(n:int)->list[int]:
+    return [n*i for i in range(5)]
