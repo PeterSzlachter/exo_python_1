@@ -23,12 +23,14 @@ try:
     total = sum(liste)
 except:
     total = 0
-    
+
 a = 5
-# b = "truc"
+b = 5
 
 try:
     print(a/b)
+except SyntaxError as e:
+    print("mauvaise syntaxe :", e)
 except ZeroDivisionError:
     print("Division par zero impossible")
 except TypeError:

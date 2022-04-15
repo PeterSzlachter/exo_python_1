@@ -3,7 +3,7 @@ from pathlib import Path
 
 CUR_DIR = Path(__file__).resolve().parent
 
-conn = sqlite3.connect("database.db")
+conn = sqlite3.connect(CUR_DIR / "database.db")
 c = conn.cursor()
 c.execute("""
 CREATE TABLE IF NOT EXISTS employees
@@ -13,12 +13,16 @@ CREATE TABLE IF NOT EXISTS employees
     salaire int
 )
 """)
+data_1 = {"salaire": 10000, "prenom": "Patrick", "nom": "Dupont"}
 
-d = {"salaire": 20000, "prenom": "Patrick", "nom": "Dupont"}
+c.execute("INSERT INTO employees VALUES (:prenom, :nom,:salaire)", data_1)
+
+data_2 = {"salaire": 10000, "prenom": "Patrick", "nom": "Dupont"}
 
 c.execute("""UPDATE employees SET salaire=:salaire
-WHERE prenom=:prenom AND nom=:nom""", d)
+WHERE prenom=:prenom AND nom=:nom""", data_2)
 
+# c.execute("DELETE FROM employees WHERE prenom='Patrick'")
 conn.commit()
 conn.close()
 
