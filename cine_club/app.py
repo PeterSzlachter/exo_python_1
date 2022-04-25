@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from PySide2 import QtWidgets, QtCore
 from movie import Movie, get_movies
 
@@ -66,3 +67,8 @@ app = QtWidgets.QApplication([])
 window = App()
 window.show()
 app.exec_()
+=======
+from PySide2 import QtWidgets
+
+
+>>>>>>> 8c61fcd7d8f40ca7f98d0e33d740c4aa052b8920

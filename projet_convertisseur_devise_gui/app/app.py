@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from PySide6 import QtWidgets
+=======
+from PySide2 import QtWidgets
+>>>>>>> 8c61fcd7d8f40ca7f98d0e33d740c4aa052b8920
 import currency_converter
 
 class App(QtWidgets.QWidget):
@@ -6,7 +10,10 @@ class App(QtWidgets.QWidget):
         super().__init__()
         self.c = currency_converter.CurrencyConverter()
         self.setWindowTitle("Convertisseur de devises")
+<<<<<<< HEAD
         self.setMinimumHeight(75)
+=======
+>>>>>>> 8c61fcd7d8f40ca7f98d0e33d740c4aa052b8920
         self.setup_ui()
         self.setup_css()
         self.set_default_values()
@@ -56,12 +63,18 @@ class App(QtWidgets.QWidget):
         
     def setup_css(self):
         self.setStyleSheet("""
+<<<<<<< HEAD
         width: 100px;
+=======
+>>>>>>> 8c61fcd7d8f40ca7f98d0e33d740c4aa052b8920
         background-color: rgb(30,30,30);
         color: rgb(240,240,240);
         border: none;                   
         """)
+<<<<<<< HEAD
         
+=======
+>>>>>>> 8c61fcd7d8f40ca7f98d0e33d740c4aa052b8920
     def set_default_values(self):
         self.cbb_devisesFrom.addItems(sorted(list(self.c.currencies)))
         self.cbb_devisesTo.addItems(sorted(list(self.c.currencies)))
@@ -78,5 +91,9 @@ app = QtWidgets.QApplication([])
 window = App()
 
 window.show()
+<<<<<<< HEAD
 app.exec()
+=======
+app.exec_()
+>>>>>>> 8c61fcd7d8f40ca7f98d0e33d740c4aa052b8920
 
