@@ -156,8 +156,12 @@
 # for c in solution :
 #     pass
 
-table = [1,2,3,4,5,6]
-caca = 3
+# table = [1,2,3,4,5,6]
+# table.extend([3])
+# print(table)
 
-def truc(n:int)->list[int]:
-    return [n*i for i in range(5)]
+# def truc(n:int)->list[int]:
+#     return [n*i for i in range(5)]
+
+# print(True + False)
+

@@ -1,0 +1,26 @@
+{
+    "_default": {
+        "1": {
+            "name": "Peter",
+            "score": 10,
+            "roles": [
+                "Alternant",
+                "Junior"
+            ]
+        },
+        "2": {
+            "name": "Jean",
+            "score": 15,
+            "roles": [
+                "Junior"
+            ]
+        },
+        "3": {
+            "name": "Pedro",
+            "score": 27,
+            "roles": [
+                "Junior"
+            ]
+        }
+    }
+}

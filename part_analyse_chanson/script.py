@@ -59,10 +59,10 @@ def get_all_words(artist:str):
     count_words = counter.most_common()
     # print(counter.most_common(15))
     dict_words = {}
-    with open(CURRENT_FILE / f"data_json_{artists[artist]}" ,"w",encoding="utf-8") as f :
+    with open(CURRENT_FILE / f"data_json_{artists[artist]}.json" ,"w",encoding="utf-8") as f :
         for word in count_words:
             dict_words[word[0]] = word[1]
         json.dump(dict_words,f, indent=4,ensure_ascii=False)
         
 
-get_all_words("test")
+get_all_words("Patrick Bruel")

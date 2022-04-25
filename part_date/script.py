@@ -18,7 +18,7 @@ print(datetime.now().year)
 
 zone = ZoneInfo("Pacific/Kwajalein")
 
-print(date.fromisoformat("2022-03-31"))
+print(date.fromisoformat("2022-03-31")) 
 print(datetime.strptime("31 Mar 2022", "%d %b %Y")) # strftime.org
 print(datetime.now().strftime("%d %B %Y"))
 print(datetime.now().tzinfo) #date naïve

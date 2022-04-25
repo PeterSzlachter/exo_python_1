@@ -1,0 +1,27 @@
+{
+    "Users": {
+        "1": {
+            "name": "Peter",
+            "score": 10
+        },
+        "2": {
+            "name": "Jean",
+            "score": 15
+        },
+        "3": {
+            "name": "Pedro",
+            "score": 20
+        }
+    },
+    "Roles": {
+        "1": {
+            "roles": "Junior"
+        },
+        "2": {
+            "roles": "Senior"
+        },
+        "3": {
+            "roles": "Rien"
+        }
+    }
+}
