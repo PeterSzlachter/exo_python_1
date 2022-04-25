@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1ab202-02fe-49a8-ac6f-e31dfbecd80e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PytBlog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/part_django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/part_django.iml" afterDir="false" />
-    </list>
+    <list default="true" id="3e1ab202-02fe-49a8-ac6f-e31dfbecd80e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
