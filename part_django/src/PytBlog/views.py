@@ -1,5 +1,11 @@
 from django.http import HttpResponse
+from django.shortcuts import render
+from datetime import datetime
 
 
 def index(request):
-    return HttpResponse("<h1>Bonjour, Bienvenue sur mon site ! </h1>")
+    date = datetime.today()
+    context = {"pseudo": "Pyt", "date": date}
+    return render(request=request,
+                  template_name="index.html",
+                  context=context)

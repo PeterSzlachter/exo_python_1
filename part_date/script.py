@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo #depuis 3.9
 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 print(date(1995,3,30))
-print(date.today())
+print("On est le", date.today())
 print(time(22,19,00))
 print(datetime(2022,3,30,22,18,00))
 print(datetime.now())
