@@ -165,3 +165,20 @@
 
 # print(True + False)
 
+# print(list(reversed(range(1,11))))
+
+# import numpy as np
+# a = np.array([1,2,3])
+# b = np.array([4,5,6])
+# c = a*b
+# d = np.dot(a,b)
+# print(c)
+# print(d)
+# import numpy as np
+# def can_matrices_be_multiplied (matrix1, matrix2):
+#     rowsMat1, columnsMat1 = matrix1.shape 
+#     rowsMat2, columnsMat2 = matrix2.shape 
+#     if ______ == ______ : 
+#         print('The matrices can be multiplied!') 
+#         return True 
+#     else: return False 

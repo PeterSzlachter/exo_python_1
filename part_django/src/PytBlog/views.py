@@ -7,5 +7,5 @@ def index(request):
     date = datetime.today()
     context = {"pseudo": "Pyt", "date": date}
     return render(request=request,
-                  template_name="index.html",
+                  template_name="PytBlog/index.html",
                   context=context)

@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site web</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Bonjour, bienvenu sur le site de {{ pseudo }} </h1>
+        <p>On est le {{ date|date:"l d F Y" }} il est {{ date|date:"H\h i\m\i\n s\s\e\c"}}</p>
+        <p><a href="/blog">Accès au blog</a></p>
+    </div>
+</body>
+</html>
