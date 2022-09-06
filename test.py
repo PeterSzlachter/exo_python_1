@@ -182,3 +182,21 @@
 #         print('The matrices can be multiplied!') 
 #         return True 
 #     else: return False 
+
+# import requests
+
+# for _ in range(10):
+#     req = requests.get("https://api.kanye.rest")
+#     quote = req.json()['quote']
+#     print(_,quote)
+
+# print(req.headers['content-type'])
+
+import requests
+
+url = 'https://api.exchangerate.host/latest'
+response = requests.get(url)
+data = response.json()
+
+print(data)
+        

@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e1ab202-02fe-49a8-ac6f-e31dfbecd80e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PytBlog/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blog/templates/blog/article_01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blog/templates/blog/article_02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blog/templates/blog/article_03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blog/templates/blog/article_not_found.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blog/templates/blog/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PytBlog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PytBlog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PytBlog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PytBlog/templates/PytBlog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PytBlog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PytBlog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,21 +36,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/pszlachter/Desktop/tuto_python/exo_python_1/part_django",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pszlachter/Desktop/tuto_python/exo_python_1/part_django&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pszlachter\Desktop\tuto_python\exo_python_1\part_django\src\PytBlog" />
@@ -130,7 +119,8 @@
       <option name="presentableId" value="Default" />
       <updated>1650894241343</updated>
       <workItem from="1652690045591" duration="166000" />
-      <workItem from="1652690227439" duration="15017000" />
+      <workItem from="1652690227439" duration="16207000" />
+      <workItem from="1658325376152" duration="2624000" />
     </task>
     <servers />
   </component>
