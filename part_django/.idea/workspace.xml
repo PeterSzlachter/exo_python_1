@@ -542,8 +542,8 @@
       <change beforePath="$PROJECT_DIR$/../part_TableauDeBordDevise/src/devise/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../part_TableauDeBordDevise/src/devise/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../part_TableauDeBordDevise/src/runserver.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../part_TableauDeBordDevise/src/runserver.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/part_django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/part_django.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -665,7 +665,8 @@
       <workItem from="1652690227439" duration="16207000" />
       <workItem from="1658325376152" duration="2624000" />
       <workItem from="1698864123728" duration="61000" />
-      <workItem from="1698864928045" duration="2461000" />
+      <workItem from="1698864928045" duration="4007000" />
+      <workItem from="1698920545917" duration="71000" />
     </task>
     <servers />
   </component>

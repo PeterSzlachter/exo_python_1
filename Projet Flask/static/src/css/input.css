@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Relancer la commande : tailwindcss.exe -i static/src/css/input.css -o static/dist/css/style.css --watch en cas de modif*/
+/*--minify pour tout concat*/
+/*--watch vérifier le fichier continuellement en arrière plan*/
+
+.btn-primary {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded-r hover:bg-blue-700 transition;
+}
+
+pre {
+    @apply py-4 font-mono overflow-x-auto;
+}
+
+:not(pre) > code {
+    @apply font-mono text-fuchsia-400 italic font-bold;
+}

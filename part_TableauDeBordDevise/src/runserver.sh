@@ -1,1 +1,1 @@
-C:/Users/pszlachter/Desktop/tuto_python/exo_python_1/part_TableauDeBordDevise/venv/Scripts/python C:/Users/pszlachter/Desktop/tuto_python/exo_python_1/part_TableauDeBordDevise/src/manage.py runserver
+C:/Users/peter.DESKTOP-5Q4UDP9/Desktop/PYTHON/exo_python_1/part_TableauDeBordDevise/.env/Scripts/python C:/Users/peter.DESKTOP-5Q4UDP9/Desktop/PYTHON/exo_python_1/part_TableauDeBordDevise/src/manage.py runserver

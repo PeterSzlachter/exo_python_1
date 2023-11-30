@@ -192,11 +192,40 @@
 
 # print(req.headers['content-type'])
 
-import requests
+# import requests
 
-url = 'https://api.exchangerate.host/latest'
-response = requests.get(url)
-data = response.json()
+# url = 'https://api.exchangerate.host/latest'
+# response = requests.get(url)
+# data = response.json()
 
-print(data)
+# print(data)
+
+# a = [3,1,1,2]
+# a_c = a.copy()
+# tmp = []
+# tmp_str = []
+
+# for i in range(len(a)):
+#     if a[i] in tmp:
+#         tmp_str.append("_")
+#     else:
+#         tmp.append(a[i])
         
+# print(tmp)
+# tmp.sort()
+# print(tmp)
+# tmp.extend(tmp_str)
+# print(tmp)
+
+# print([1,2,3]*3)
+# import numpy
+
+# a = numpy.zeros([3,4])
+# b = a.copy()
+# print(numpy.array_equal(a,b))
+
+# print("foo" if (256).bit_length() > 8 else "bar")
+
+test = [1, 2, 3, 1]
+min(test)
+print(min(test))
